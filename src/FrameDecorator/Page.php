@@ -497,13 +497,13 @@ class Page extends AbstractFrameDecorator
 
             // FIXME If the row is taller than the page and
             // if it the first of the page, we don't break
-            $display = $p->get_style()->display;
-            if ($display === "table-row"
-                && !$p->get_prev_sibling()
-                && $p->get_margin_height() > $this->get_margin_height()
-            ) {
-                return false;
-            }
+            // $display = $p->get_style()->display;
+            // if ($display === "table-row"
+            //     && !$p->get_prev_sibling()
+            //     && $p->get_margin_height() > $this->get_margin_height()
+            // ) {
+            //     return false;
+            // }
         } while ($p = $p->get_parent());
 
         $margin_height = $frame->get_margin_height();
