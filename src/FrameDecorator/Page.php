@@ -502,7 +502,7 @@ class Page extends AbstractFrameDecorator
                 && !$p->get_prev_sibling()
                 && $p->get_margin_height() > $this->get_margin_height()
             ) {
-                return false;
+                break;
             }
         } while ($p = $p->get_parent());
 
